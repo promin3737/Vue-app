@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>
+    <div class="tab">
       <router-link to="/">Tokyo</router-link> |
       <router-link to="/london_time">London</router-link> |
       <router-link to="/newyork_time">NewYork</router-link>
@@ -26,5 +26,11 @@
   width: 80%;
   max-width: 500px;
   margin: 30px auto;
+}
+.tab {
+  width: 40%;
+  background-color: aqua;
+  color: white;
+  font-size: 35px;
 }
 </style>
