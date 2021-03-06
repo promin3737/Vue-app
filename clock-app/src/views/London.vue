@@ -34,10 +34,10 @@ export default {
     //     return this.date.getHours() - 9
     //   },
     day() {
-      if (this.date.getHours() < 9) {
-        return this.date.getDate() - 1
+      if (this.date.getHours() >= 9) {
+        return this.date.getDate()
       } else {
-        return this.get.getDate()
+        return this.get.getDate() - 1
       }
     },
     hours() {
