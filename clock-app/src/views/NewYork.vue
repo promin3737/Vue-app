@@ -27,13 +27,13 @@ export default {
     month() {
       return this.date.getMonth() + 1
     },
+    //day() {
+    //return this.date.getDate()
+    //},
+    //hours() {
+    //return this.date.getHours() - 14
+    //},
     day() {
-      return this.date.getDate()
-    },
-    hours() {
-      return this.date.getHours() - 14
-    },
-    /**day() {
       if (this.date.getHours() < 14) {
         return this.date.getDate() - 1
       } else {
@@ -47,7 +47,7 @@ export default {
         const that = this.date.getHours() - 14
         return 24 + that
       }
-    },**/
+    },
     minutes: function() {
       return this.date.getMinutes()
     },
